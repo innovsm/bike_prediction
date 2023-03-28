@@ -1,7 +1,6 @@
 import streamlit as st
-import eda as ed
-import prediction as pred
-
+from prediction import app
+from eda import app_eda
 st.title("Bike Rental Prediction")
 with st.expander("About", expanded=False):
      st.write("""
@@ -109,7 +108,8 @@ with st.sidebar:
 if(button_1):
         
         if(button_1 == "EDA"):
-            ed.app()
+             app_eda()
+    
         else:
-            pred.app()
+            app()
 

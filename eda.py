@@ -16,7 +16,7 @@ def get_dataframe_day():
     
     return data
 
-def app():
+def app_eda():
     final_dataframe = pd.DataFrame() # dummy dataframe
     st.write("EDA [Exploratory data analysis ]")
     data_frame_selection = st.selectbox("Select dataset", ['','hourly dataset', 'daily dataset'])
