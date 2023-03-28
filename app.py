@@ -1,7 +1,6 @@
 import streamlit as st
 import eda as ed
 import prediction as pred
-import prediction as pd
 
 st.title("Bike Rental Prediction")
 with st.expander("About", expanded=False):
