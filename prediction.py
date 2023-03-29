@@ -158,8 +158,11 @@ def app():
                     model = load_model("model.h5")
                     X = data_hour[['season', 'yr', 'mnth', 'hr', 'holiday', 'weekday', 'workingday','weathersit', 'temp', 'atemp', 'hum', 'windspeed']]
                     y_pred = model.predict(X)
+
                     st.write("r2 score")
                     st.write(r2_score(y_pred, data_hour['cnt']))
+                    st.subheader("neural Architecture")
+                    st.image("image.png", width = 800)
                  
                 else:
                     st.write("do note have enough data to train the neural network")
