@@ -1,3 +1,4 @@
+Ta-Lib
 pandas
 numpy
 keras
